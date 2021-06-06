@@ -1,0 +1,19 @@
+
+
+//Inorder to add new event on scroll 
+windows.addEventListener("scroll",function(event)){
+
+var scroll =this.scrolY;//setting he variable to scrolly
+
+if(scroll > 0){
+
+document.body.style.background="pink"
+
+
+}else{
+document.body.style.backgroundColor="white";
+
+}
+
+
+});

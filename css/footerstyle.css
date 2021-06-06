@@ -1,0 +1,365 @@
+.container footer{
+    display: flex;
+    flex-direction: column;
+    grid-area:footer;
+    background:#003333;
+
+
+}
+/* footone */
+.container footer .infootone{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+
+    
+}
+
+/* secondwithlogoandids */
+.container footer .infootone .second{
+    width:70vw;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.container footer .infootone .second #whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.container footer .infootone .second img{
+    height: 1.5em;
+    width:1.5em;
+}
+.container footer .infootone .second a{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    
+}
+.container footer .infootone .second #call{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.container footer .infootone .second #mail{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+
+
+/* foottwo */
+.container footer .infoottwo{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow:hidden;
+
+    
+    
+
+}
+.container footer .infoottwo div{
+    width:25vw;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.container footer .infoottwo .box1{
+    width: 40vw;
+}
+.container footer .infoottwo .box1 img{
+ width:1.5em;
+ height: 1.8em;
+
+}
+
+
+/* footthree */
+.container footer .infootthree{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+.container footer .infootthree .location {
+    display: flex;
+    justify-content: center;
+    align-items :center ;
+    color:white;
+    width: 90vw;
+    
+
+
+}
+.container footer .infootthree .location .address{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container footer .infootthree .location .address a {
+    font-size: 1em;
+    
+    text-decoration: none;
+    color:white;
+
+
+}
+
+
+
+    /* footfour */
+.container footer .infootfour{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+align-items: center;
+overflow: hidden;
+
+}
+.container footer .infootfour .courses{
+    display: flex;
+    width: 15vw;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.container footer .infootfour .team{
+    display: flex;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1.2rem;
+    cursor:pointer;
+
+}
+.container footer .infootfour .blog{
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1.2rem;
+    cursor:pointer;
+
+}
+
+/* footfive */
+
+
+.container footer .infootfive{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.container footer .infootfive .tc{
+
+    display: flex;
+    width: 15vw;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.container footer .infootfive .policy{
+
+    display: flex;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.container footer .infootfive .faqs{
+
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color:white;
+    font-size: 1rem;
+    cursor:pointer;
+
+}
+/* footsix */
+
+.container footer .infootsix{
+    /* border: aliceblue 1px solid; */
+    height: 10vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    
+    color:white;
+}
+.container footer .infootsix h5{
+    text-align:center ;
+    font-size:1rem;
+
+}
+
+
+
+/* mediaqueries */
+@media only screen and (min-width:100px) and  (max-width:500px){
+    /* contact us part */
+    .container footer .infootone{
+        height:20vh
+    
+    }.container footer .infootone .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 18vh;
+        width:70vw;
+    }
+    .container footer .infootone .first {
+
+        display: none;
+        
+    }
+    
+    .container footer .infootone .third {
+    
+        display: none;
+        
+    }
+    footer .infootone .second img {
+        height: 1em;
+        width: 1em;
+    }
+    /* social media part */
+    .container footer .infoottwo {
+        /* border: aliceblue 1px solid; */
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .container footer .infoottwo .box1 img {
+        width: 9vw;
+        height: 5.6vh;
+    }
+    .container footer .infoottwo .box1 .facebook {
+        width: 3.8vw;
+        height: 3.5vh;
+    }
+    .container footer .infoottwo .box2{
+       display: none;
+    }
+    .container footer .infoottwo .box{
+        display: none;
+     }
+     .container footer .infoottwo .box1 {
+        width: 95vw;
+    }
+    /* address part */
+    .container footer .infootthree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    .container footer .infootthree .location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: 95vw;
+
+    }
+    .container footer .infootthree .location .address{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .container footer .infootthree .location .address a {
+        font-size: 0.8em;
+        
+        text-decoration: none;
+        color: white;
+    }
+ 
+    /* trms and policy */
+    
+
+
+.container footer .infootfive .tc {
+    display: flex;
+    width: 30vw;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+}
+.container footer .infootfive .policy {
+    display: flex;
+    /* width: 30vw; */
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+
+.container footer .infootfive .faqs {
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+/* teams */
+.container footer .infootthree .location .img img {
+    width: 1em;
+    height: 1em;
+}
+
+
+}

@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background: white;
+    
+}
+form{
+    
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:50vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    position: relative;
+    
+    
+
+}
+.container header{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    position:fixed;
+    z-index: 1;
+
+
+}
+.container header img{
+    width: 6.5rem;
+    height: 2.5rem;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#085951;
+    margin: 0 0.5em;
+    margin-top: 10px;
+    position: relative;
+    transition: all 0.8s ease-in;
+    
+}
+header a:hover{
+color:rgb(33, 141, 141);
+}
+header a:hover::after{
+    content: "";
+    position: absolute;
+    width: 2.8em;
+    height: 2px;
+    bottom: 0;
+    
+    right: 0;
+    background:rgb(33, 141, 141);
+    border-radius: 40px;
+    transition: all ease 0.3s;
+    animation: vadta 0.25s ease-in-out 1;
+   
+}
+@keyframes vadta{
+    from{
+        width:0.5em;
+        background:rgb(33, 141, 141);
+    }
+    to{
+        width:2.5em;
+        background:rgb(33, 141, 141);
+    }
+
+    
+}
+
+/* main container styling */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    background: url("/Images/Backup_of_mrtasc\ .png")  no-repeat;
+    
+    background-size:cover;
+    position: relative;
+}
+main .content{
+    /* border: 1px solid rgb(194, 58, 58); */
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+    width:90vw;
+    height: 60vh;
+    margin-top: 4em;
+}
+/* the form part div */
+.content .leftcontent{
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:50vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+/* form inner in .leftcontent */
+
+.leftcontent .whoru{
+    transform: translateY(5em);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    align-items: center;
+    transition: all 0.4s ease;
+
+   /* border: 1px solid rgb(5, 8, 8); */
+    width: 40vw;
+   height: 150vh;
+    
+
+
+}
+/* dropdownlist of who r u  */
+.leftcontent div h3{
+    font-size: 1.2rem ;
+    font-family: 'IBM Plex Mono', monospace;
+    width: 40vw;
+    font-weight: 5000;
+    filter:brightness(50%) hue-rotate(50deg) ;
+
+}
+.leftcontent div h3::first-letter{
+    color:rgb(8, 88, 119);
+}
+
+
+.leftcontent div select{
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 1.4rem;
+    width:30vw;
+    color:darkcyan;
+    align-self: center;
+   
+}
+.leftcontent div select:focus{
+    border-bottom: 1.5px solid rgb(8, 141, 141);
+
+}
+
+
+.leftcontent div input:active {
+    border-bottom: 2px solid rgb(12, 150, 138);
+}
+.leftcontent div .pressEnter{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15vw;
+    transform: translateX(5em);
+    transition: all ease-in 0.3s;
+    transform: translateY(25em);
+    position: relative;
+
+}
+
+
+.leftcontent div .pressEnter button{
+    align-self: flex-start;
+    transition: all ease-in 1s;
+    /* transform: translateX(-5em); */
+    background-color:rgb(5, 187, 187);
+    /* border:1px solid black; */
+    outline:rgb(163, 154, 154);
+    font-size: 1.5em;
+    color:rgb(255, 255, 255);
+    padding: -2px -2px;
+    margin-left: 20px;
+    border:none;
+    
+    
+
+    
+}
+.leftcontent div .pressEnter button:hover{
+    transform: scale(1.1,1.1);
+}
+
+.leftcontent div .pressEnter button:active{
+    transform: scale(0.8,0.8);
+}
+.leftcontent div .pressEnter p{
+   margin: 0;
+}
+
+
+/* 
+student css form         */
+.leftcontent .student{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 50vw;
+    overflow: hidden;
+    flex-direction: column;
+    align-items :center ;
+    justify-content: space-between;
+    position: relative;
+    transform: translateY(50em);
+    transition: all 0.4s ease;
+
+
+}
+  /* Name div styling */
+.leftcontent .student .name{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    transition: all 0.3s ease-in;
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    /* height: 60vh;    */
+    
+    
+   
+
+}
+
+ .leftcontent .student input{
+     color: rgb(12, 136, 136);
+    font-size: 1.8rem;     
+    border: none;
+    align-self: center;
+    width:30vw;
+    border-bottom: 1px solid grey;
+    font-family: monospace;
+    position: relative;
+    outline: none;
+    align-self: center;
+    padding-left: 5px;
+} 
+.leftcontent .student input:hover{
+    border-bottom: 1px solid rgb(12, 136, 136);
+
+}
+/* email div styling */
+.leftcontent .student .email{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    
+
+    transform: translateY(5em);
+    transition: all 0.3 ease-in;
+    /* height: 60vh; */
+
+    
+   
+
+}
+
+.customclasslist{
+    transform: translateY(1em);
+
+}
+.leftcontent .student .contact{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    
+
+    transform: translateY(5em);
+    transition: all 0.3 ease-in;
+    /* height: 80vh; */
+
+}
+.leftcontent .student .itornonit{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    
+
+    transform: translateY(5em);
+    transition: all 0.3 ease-in;
+    /* height: 100vh; */
+
+}
+.leftcontent .student .interest{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    
+
+    transform: translateY(5em);
+    transition: all 0.3 ease-in;
+    /* height: 100vh; */
+
+}
+.interesthead{
+    font-size: 1.2rem ;
+    font-family: 'IBM Plex Mono', monospace;
+    width: 40vw;
+    font-weight: 5000;
+    filter:brightness(50%) hue-rotate(50deg) ;
+
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    /* border: 1px solid black; */
+    width: 40vw;
+    position: relative;
+    
+
+    transform: translateY(5em);
+    transition: all 0.3 ease-in;
+    /* height: 180vh; */
+
+}
+/* the decoration pattern */
+.content .rightcontent{
+
+    /* border: 1px solid black; */
+    
+
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    height: 60vh;
+    position: relative;
+    
+}
+
+
+
+/* status bar with percentage */
+.bar{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    position: relative;
+    background: white;
+    opacity: 0.8;
+    border-radius: 30px;
+    
+}
+/* user agent stylesheet */
+div {
+    display: block;
+    
+
+
+}
+.bar .statusbar{
+    display: block;
+    height: 3vh;
+    width:30vw;
+    border: 2px solid rgb(18, 143, 160);
+    border-radius: 40px;
+
+}
+#percentage{
+    color:rgb(13, 105, 105);
+    transition:all 0.3s ease-in;
+    
+    
+}
+.movingbar{
+    display: block;
+    height: auto;
+    width:0vw;
+    height: 3vh;
+    background:  rgb(18, 143, 160);
+    transition:all 0.3s ease-in;
+    border-radius: 40px;
+
+}
+.rightcontent .quote {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    position: relative;
+    background: white;
+    opacity: 0.8;
+    border-radius: 30px;
+    font-family: 'PT Serif', serif;
+}
+.rightcontent .quote img{
+height: 3em;
+width:13em;
+position: absolute;
+right: 0;
+bottom: 0;
+
+opacity: 0.7;
+left:auto
+}
+.rightcontent .quote p{
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    letter-spacing: 0.3px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
